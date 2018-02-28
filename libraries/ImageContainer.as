@@ -13,6 +13,7 @@
       public function ImageContainer(filename:String = "images/no_image.png", value:String = "NoN", posx:uint = 50, posy:uint = 50):void{
         super(filename,value,posx,posy);
         this.assingnEvents();
+        this.type = false;
       }
 
       public function assingnEvents(){
@@ -23,13 +24,20 @@
 
       public function removeEvents(){
         this.removeEventListener(MouseEvent.MOUSE_DOWN, drag);
-        //this.removeEventListener(MouseEvent.MOUSE_UP, drop);
+        this.removeEventListener(MouseEvent.MOUSE_UP, drop);
         this.removeEventListener(MouseEvent.MOUSE_UP, testCollision);
+        //this.removeEventListener(MouseEvent.CLICK, click_figure);
       }
 
       public function drag(e:MouseEvent):void{
         e.target.startDrag();
       }
+      /*
+      public function click_figure(e:MouseEvent):void{
+        e.target.stopDrag();
+        e.target.x = MOUSE.x;
+        e.target.y = 
+      }*/
 
       public function drop(e:MouseEvent):void{
         e.target.stopDrag();
@@ -50,12 +58,18 @@
         var children:Array = getChildrenOf(stage);
 
         for (var j = 0; j < children.length; j++) {
-          if(children[j] == e.target)
-          {continue;}
+          if(children[j] == e.target){continue;}
+
           else if (e.target.hitTestObject(children[j])) {
             trace(_value+" Collisioned with: "+children[j].value);
+
+            if(children[j].type){
+              this.x = children[j].posx;
+              this.y = children[j].posy;
+            }
             if(_value == children[j].value){
-              this.removeEvents();
+              //this.removeEvents();
+              
             }
           counter++;
           }

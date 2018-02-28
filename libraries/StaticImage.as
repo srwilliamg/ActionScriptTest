@@ -10,6 +10,7 @@ package libraries {
 
   public class StaticImage extends Sprite{
       static var counter:uint = 0;
+      public var type:Boolean = true;
 
       protected var _fileURL:String = "images/no_image.png";
       protected var _width:uint = 75;
@@ -22,8 +23,8 @@ package libraries {
         loader.contentLoaderInfo.addEventListener(Event.COMPLETE, onLoadComplete);
         trace("filename: "+_fileURL);
         loader.load(new URLRequest(_fileURL));
-        _value = value;
-        setPos(posx,posy);
+        this._value = value;
+        this.setPos(posx,posy);
       }
 
       public function onLoadComplete(e:Event):void{
@@ -53,6 +54,14 @@ package libraries {
 
       public function get value():String{
         return this._value;
+      }
+
+      public function get posx():int{
+        return this.x;
+      }
+
+      public function get posy():int{
+        return this.y;
       }
 
       public function set filename(fileURL:String){
