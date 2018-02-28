@@ -55,7 +55,7 @@
       }
 
       public function testCollision(e: Event):void{
-        var children:Array = getChildrenOf(stage);
+        var children:Array = getChildrenOf(e.target.parent);
 
         for (var j = 0; j < children.length; j++) {
           if(children[j] == e.target){continue;}
@@ -63,11 +63,11 @@
           else if (e.target.hitTestObject(children[j])) {
             trace(_value+" Collisioned with: "+children[j].value);
 
-            if(children[j].type){
+            if(children[j].type){ // Checks if it's StaticImage or ImageContainer in order to change its position
               this.x = children[j].posx;
               this.y = children[j].posy;
             }
-            if(_value == children[j].value){
+            if(_value == children[j].value){//it checks if the targets has the same value
               //this.removeEvents();
               
             }

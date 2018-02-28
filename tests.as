@@ -1,6 +1,7 @@
 import libraries.*;
 
 var xmlURL:String = "xml/text.xml";
+var game:Alphabet = new Alphabet(stage);
 
 function loadXML(){
   var xml_Loader:URLLoader = new URLLoader();
@@ -17,12 +18,17 @@ function progressHandler(e:ProgressEvent){trace("loaded: " + e.bytesLoaded + "to
 function do_XML(e:Event):void {
   trace("COMPLETE");
   Words.getInstance().xmlData = new XML(e.target.data);
-
-  var game:Alphabet = new Alphabet();
-  //game.drawLetters(stage);
-  game.drawWordFields(stage);
-  game.drawAlphabet(stage);
+  //game.drawLetters();
+  game.drawWordFields();
+  game.drawAlphabet();
 }
 
 loadXML();
+
+r_btn.addEventListener(MouseEvent.CLICK, fl_ClickToGoToAndStopAtFrame);
+function fl_ClickToGoToAndStopAtFrame(event:MouseEvent):void{
+  game.clean();
+  gotoAndStop(5);
+}
+
 trace("Ended");

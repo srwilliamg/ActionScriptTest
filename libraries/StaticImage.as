@@ -21,7 +21,7 @@ package libraries {
         _fileURL = filename;
         var loader:Loader = new Loader();
         loader.contentLoaderInfo.addEventListener(Event.COMPLETE, onLoadComplete);
-        trace("filename: "+_fileURL);
+        //trace("filename: "+_fileURL);
         loader.load(new URLRequest(_fileURL));
         this._value = value;
         this.setPos(posx,posy);
