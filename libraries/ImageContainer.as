@@ -10,8 +10,8 @@
 
   public class ImageContainer extends StaticImage{
 
-      public function ImageContainer(filename:String = "images/no_image.png"):void{
-        super(filename);
+      public function ImageContainer(filename:String = "images/no_image.png", value:String = "NoN", posx:uint = 50, posy:uint = 50):void{
+        super(filename,value,posx,posy);
         this.assingnEvents();
       }
 
@@ -23,7 +23,7 @@
 
       public function removeEvents(){
         this.removeEventListener(MouseEvent.MOUSE_DOWN, drag);
-        this.removeEventListener(MouseEvent.MOUSE_UP, drop);
+        //this.removeEventListener(MouseEvent.MOUSE_UP, drop);
         this.removeEventListener(MouseEvent.MOUSE_UP, testCollision);
       }
 

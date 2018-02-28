@@ -11,17 +11,19 @@ package libraries {
   public class StaticImage extends Sprite{
       static var counter:uint = 0;
 
-      protected var _fileURL:String ="images/no_image.png";
+      protected var _fileURL:String = "images/no_image.png";
       protected var _width:uint = 75;
       protected var _height:uint = 75;
-      protected var _value:String = "";
+      protected var _value:String = "NoN";
 
-      public function StaticImage(filename:String = "images/no_image.png"):void{
+      public function StaticImage(filename:String = "images/no_image.png", value:String = "NoN", posx:uint = 50, posy:uint = 50):void{
         _fileURL = filename;
         var loader:Loader = new Loader();
         loader.contentLoaderInfo.addEventListener(Event.COMPLETE, onLoadComplete);
         trace("filename: "+_fileURL);
         loader.load(new URLRequest(_fileURL));
+        _value = value;
+        setPos(posx,posy);
       }
 
       public function onLoadComplete(e:Event):void{
@@ -38,6 +40,11 @@ package libraries {
       public function setSize(width:uint, height:uint):void{
         this._width = width;
         this._height = height;
+      }
+
+      public function setPos(posx:uint, posy:uint):void{
+        this.x = posx;
+        this.y = posy;
       }
 
       public function set value(val:String):void{
