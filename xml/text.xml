@@ -1,0 +1,214 @@
+<data>
+	<alphabet>
+        <img id="A">images/A.png</img>
+        <img id="B">images/B.png</img>
+        <img id="C">images/C.png</img>
+        <img id="D">images/D.png</img>
+        <img id="E">images/E.png</img>
+        <img id="F">images/F.png</img>
+        <img id="G">images/G.png</img>
+        <img id="H">images/H.png</img>
+        <img id="I">images/I.png</img>
+        <img id="J">images/J.png</img>
+        <img id="K">images/K.png</img>
+        <img id="L">images/L.png</img>
+        <img id="M">images/M.png</img>
+        <img id="N">images/N.png</img>
+        <img id="O">images/O.png</img>
+        <img id="P">images/P.png</img>
+        <img id="Q">images/Q.png</img>
+        <img id="R">images/R.png</img>
+        <img id="S">images/S.png</img>
+        <img id="T">images/T.png</img>
+        <img id="U">images/U.png</img>
+        <img id="V">images/V.png</img>
+        <img id="W">images/W.png</img>
+        <img id="X">images/X.png</img>
+        <img id="Y">images/Y.png</img>
+        <img id="Z">images/Z.png</img>
+	</alphabet>
+    <words>
+        <A>
+            <word id="1">Athing01</word>
+            <word id="2">Athing02</word>
+            <word id="3">Athing03</word>
+            <word id="4">Athing04</word>
+            <word id="5">Athing05</word>
+        </A>
+        <B>
+            <word id="1">Bthing01</word>
+            <word id="2">Bthing02</word>
+            <word id="3">Bthing03</word>
+            <word id="4">Bthing04</word>
+            <word id="5">Bthing05</word>
+        </B>
+        <C>
+            <word id="1">Cthing01</word>
+            <word id="2">Cthing02</word>
+            <word id="3">Cthing03</word>
+            <word id="4">Cthing04</word>
+            <word id="5">Cthing05</word>
+        </C>
+        <D>
+            <word id="1">Dthing01</word>
+            <word id="2">Dthing02</word>
+            <word id="3">Dthing03</word>
+            <word id="4">Dthing04</word>
+            <word id="5">Dthing05</word>
+        </D>
+        <E>
+            <word id="1">Ething01</word>
+            <word id="2">Ething02</word>
+            <word id="3">Ething03</word>
+            <word id="4">Ething04</word>
+            <word id="5">Ething05</word>
+        </E>
+        <F>
+            <word id="1">Fthing01</word>
+            <word id="2">Fthing02</word>
+            <word id="3">Fthing03</word>
+            <word id="4">Fthing04</word>
+            <word id="5">Fthing05</word>
+        </F>
+        <G>
+            <word id="1">Gthing01</word>
+            <word id="2">Gthing02</word>
+            <word id="3">Gthing03</word>
+            <word id="4">Gthing04</word>
+            <word id="5">Gthing05</word>
+        </G>
+        <H>
+            <word id="1">Hthing01</word>
+            <word id="2">Hthing02</word>
+            <word id="3">Hthing03</word>
+            <word id="4">Hthing04</word>
+            <word id="5">Hthing05</word>
+        </H>
+        <I>
+            <word id="1">Ithing01</word>
+            <word id="2">Ithing02</word>
+            <word id="3">Ithing03</word>
+            <word id="4">Ithing04</word>
+            <word id="5">Ithing05</word>
+        </I>
+        <J>
+            <word id="1">Jthing01</word>
+            <word id="2">Jthing02</word>
+            <word id="3">Jthing03</word>
+            <word id="4">Jthing04</word>
+            <word id="5">Jthing05</word>
+        </J>
+        <K>
+            <word id="1">Kthing01</word>
+            <word id="2">Kthing02</word>
+            <word id="3">Kthing03</word>
+            <word id="4">Kthing04</word>
+            <word id="5">Kthing05</word>
+        </K>
+        <L>
+            <word id="1">Lthing01</word>
+            <word id="2">Lthing02</word>
+            <word id="3">Lthing03</word>
+            <word id="4">Lthing04</word>
+            <word id="5">Lthing05</word>
+        </L>
+        <M>
+            <word id="1">Mthing01</word>
+            <word id="2">Mthing02</word>
+            <word id="3">Mthing03</word>
+            <word id="4">Mthing04</word>
+            <word id="5">Mthing05</word>
+        </M>
+        <N>
+            <word id="1">Nthing01</word>
+            <word id="2">Nthing02</word>
+            <word id="3">Nthing03</word>
+            <word id="4">Nthing04</word>
+            <word id="5">Nthing05</word>
+        </N>
+        <O>
+            <word id="1">Othing01</word>
+            <word id="2">Othing02</word>
+            <word id="3">Othing03</word>
+            <word id="4">Othing04</word>
+            <word id="5">Othing05</word>
+        </O>
+        <P>
+            <word id="1">Pthing01</word>
+            <word id="2">Pthing02</word>
+            <word id="3">Pthing03</word>
+            <word id="4">Pthing04</word>
+            <word id="5">Pthing05</word>
+        </P>
+        <Q>
+            <word id="1">Qthing01</word>
+            <word id="2">Qthing02</word>
+            <word id="3">Qthing03</word>
+            <word id="4">Qthing04</word>
+            <word id="5">Qthing05</word>
+        </Q>
+        <R>
+            <word id="1">Rthing01</word>
+            <word id="2">Rthing02</word>
+            <word id="3">Rthing03</word>
+            <word id="4">Rthing04</word>
+            <word id="5">Rthing05</word>
+        </R>
+        <S>
+            <word id="1">Sthing01</word>
+            <word id="2">Sthing02</word>
+            <word id="3">Sthing03</word>
+            <word id="4">Sthing04</word>
+            <word id="5">Sthing05</word>
+        </S>
+        <T>
+            <word id="1">Tthing01</word>
+            <word id="2">Tthing02</word>
+            <word id="3">Tthing03</word>
+            <word id="4">Tthing04</word>
+            <word id="5">Tthing05</word>
+        </T>
+        <U>
+            <word id="1">Uthing01</word>
+            <word id="2">Uthing02</word>
+            <word id="3">Uthing03</word>
+            <word id="4">Uthing04</word>
+            <word id="5">Uthing05</word>
+        </U>
+        <V>
+            <word id="1">Vthing01</word>
+            <word id="2">Vthing02</word>
+            <word id="3">Vthing03</word>
+            <word id="4">Vthing04</word>
+            <word id="5">Vthing05</word>
+        </V>
+        <W>
+            <word id="1">Wthing01</word>
+            <word id="2">Wthing02</word>
+            <word id="3">Wthing03</word>
+            <word id="4">Wthing04</word>
+            <word id="5">Wthing05</word>
+        </W>
+        <X>
+            <word id="1">Xthing01</word>
+            <word id="2">Xthing02</word>
+            <word id="3">Xthing03</word>
+            <word id="4">Xthing04</word>
+            <word id="5">Xthing05</word>
+        </X>
+        <Y>
+            <word id="1">Ything01</word>
+            <word id="2">Ything02</word>
+            <word id="3">Ything03</word>
+            <word id="4">Ything04</word>
+            <word id="5">Ything05</word>
+        </Y>
+        <Z>
+            <word id="1">Zthing01</word>
+            <word id="2">Zthing02</word>
+            <word id="3">Zthing03</word>
+            <word id="4">Zthing04</word>
+            <word id="5">Zthing05</word>
+        </Z>
+    </words>
+</data>
