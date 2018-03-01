@@ -10,7 +10,8 @@
 
   public class ImageContainer extends StaticImage{
 
-      public function ImageContainer(filename:String = "images/no_image.png", value:String = "NoN", posx:uint = 50, posy:uint = 50):void{
+      public function ImageContainer(filename:String = "images/no_image.png",
+       value:String = "NoN", posx:uint = 50, posy:uint = 50):void{
         super(filename,value,posx,posy);
         this.assingnEvents();
         this.type = false;
@@ -32,12 +33,6 @@
       public function drag(e:MouseEvent):void{
         e.target.startDrag();
       }
-      /*
-      public function click_figure(e:MouseEvent):void{
-        e.target.stopDrag();
-        e.target.x = MOUSE.x;
-        e.target.y = 
-      }*/
 
       public function drop(e:MouseEvent):void{
         e.target.stopDrag();

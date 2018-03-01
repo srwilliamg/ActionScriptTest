@@ -25,10 +25,19 @@ function do_XML(e:Event):void {
 
 loadXML();
 
+//var img:ImageContainer = new ImageContainer(3,"images/button.png");
+//img.setSize(300,200);
+//stage.addChild(img);
+
 r_btn.addEventListener(MouseEvent.CLICK, fl_ClickToGoToAndStopAtFrame);
+//r_btn.addEventListener(MouseEvent.MOUSE_OVER, fl_Mouse_over);
 function fl_ClickToGoToAndStopAtFrame(event:MouseEvent):void{
   game.clean();
   gotoAndStop(5);
 }
+
+//function fl_Mouse_over(event:MouseEvent):void{
+//  r_btn.changetext();
+//}
 
 trace("Ended");

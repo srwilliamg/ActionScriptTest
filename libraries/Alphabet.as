@@ -34,9 +34,6 @@ package libraries {
           y+=100; //change in coord Y is not working
           x = 0;
         }
-        else{
-          x+=100;
-        }
         this.addChild(
         new ImageContainer(
           Words.getInstance().xmlData.alphabet.img[i],
@@ -45,6 +42,7 @@ package libraries {
           y // here too
           )
         );
+        x+=100;
       }
     }
 

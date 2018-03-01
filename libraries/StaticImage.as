@@ -9,63 +9,64 @@ package libraries {
   import flash.display.DisplayObjectContainer;
 
   public class StaticImage extends Sprite{
-      static var counter:uint = 0;
-      public var type:Boolean = true;
+    static var counter:uint = 0;
+    public var type:Boolean = true;
 
-      protected var _fileURL:String = "images/no_image.png";
-      protected var _width:uint = 75;
-      protected var _height:uint = 75;
-      protected var _value:String = "NoN";
+    protected var _fileURL:String = "images/no_image.png";
+    protected var _width:uint = 75;
+    protected var _height:uint = 75;
+    protected var _value:String = "NoN";
 
-      public function StaticImage(filename:String = "images/no_image.png", value:String = "NoN", posx:uint = 50, posy:uint = 50):void{
-        _fileURL = filename;
-        var loader:Loader = new Loader();
-        loader.contentLoaderInfo.addEventListener(Event.COMPLETE, onLoadComplete);
-        //trace("filename: "+_fileURL);
-        loader.load(new URLRequest(_fileURL));
-        this._value = value;
-        this.setPos(posx,posy);
-      }
+    public function StaticImage(filename:String = "images/no_image.png",
+     value:String = "NoN", posx:uint = 50, posy:uint = 50):void{
+      _fileURL = filename;
+      var loader:Loader = new Loader();
+      loader.contentLoaderInfo.addEventListener(Event.COMPLETE, onLoadComplete);
+      //trace("filename: "+_fileURL);
+      loader.load(new URLRequest(_fileURL));
+      this._value = value;
+      this.setPos(posx,posy);
+    }
 
-      public function onLoadComplete(e:Event):void{
-        var loaderInfo:LoaderInfo = e.target as LoaderInfo;
-        var loadedBitmap:Bitmap = loaderInfo.content as Bitmap;
-        //var sprite:Sprite = new Sprite();
-        //sprite.addChild(loadedBitmap);
-        this.addChild((new Sprite()).addChild(loadedBitmap));
-        width = _width;
-        height = _height;
-        //addChild(sprite);
-      }
+    public function onLoadComplete(e:Event):void{
+      var loaderInfo:LoaderInfo = e.target as LoaderInfo;
+      var loadedBitmap:Bitmap = loaderInfo.content as Bitmap;
+      //var sprite:Sprite = new Sprite();
+      //sprite.addChild(loadedBitmap);
+      this.addChild((new Sprite()).addChild(loadedBitmap));
+      width = _width;
+      height = _height;
+      //addChild(sprite);
+    }
 
-      public function setSize(width:uint, height:uint):void{
-        this._width = width;
-        this._height = height;
-      }
+    public function setSize(width:uint, height:uint):void{
+      this._width = width;
+      this._height = height;
+    }
 
-      public function setPos(posx:uint, posy:uint):void{
-        this.x = posx;
-        this.y = posy;
-      }
+    public function setPos(posx:uint, posy:uint):void{
+      this.x = posx;
+      this.y = posy;
+    }
 
-      public function set value(val:String):void{
-        this._value = val;
-      }
+    public function set value(val:String):void{
+      this._value = val;
+    }
 
-      public function get value():String{
-        return this._value;
-      }
+    public function get value():String{
+      return this._value;
+    }
 
-      public function get posx():int{
-        return this.x;
-      }
+    public function get posx():int{
+      return this.x;
+    }
 
-      public function get posy():int{
-        return this.y;
-      }
+    public function get posy():int{
+      return this.y;
+    }
 
-      public function set filename(fileURL:String){
-        this._fileURL = fileURL;
-      }
+    public function set filename(fileURL:String){
+      this._fileURL = fileURL;
+    }
   }
 }
